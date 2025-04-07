@@ -4,7 +4,11 @@ require('lze').load {
     {
       '<leader>tp',
       function()
-        require('precognition').toggle()
+        if require('precognition').toggle() then
+          vim.notify 'Precognition on'
+        else
+          vim.notify 'Precognition off'
+        end
       end,
       mode = { 'n' },
       desc = '[T]oggle [P]recognition',
