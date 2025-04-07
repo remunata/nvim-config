@@ -93,6 +93,7 @@
               indent-blankline-nvim
               alpha-nvim
               lualine-nvim
+              comment-nvim
             ];
 
             cmp = with pkgs.vimPlugins; [
