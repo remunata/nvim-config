@@ -96,4 +96,10 @@ require('lze').load {
       filetypes = { 'javascript', 'javascriptreact', 'javascript.jsx', 'typescript', 'typescriptreact', 'typescript.tsx' },
     },
   },
+  {
+    'gopls',
+    lsp = {
+      filetypes = { 'go' },
+    },
+  },
 }

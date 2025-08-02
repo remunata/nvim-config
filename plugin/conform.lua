@@ -13,6 +13,7 @@ require('lze').load {
         python = { 'isort', 'black' },
         javascript = { 'prettierd' },
         typescript = { 'prettierd' },
+        go = { 'gofumpt' },
       },
       format_on_save = {
         lsp_format = 'fallback',

@@ -44,6 +44,7 @@
               pyright
               clang
               typescript-language-server
+              gopls
             ];
 
             format = with pkgs; [
@@ -53,6 +54,7 @@
               black
               clang-tools
               prettierd
+              gofumpt
             ];
           };
 
