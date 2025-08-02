@@ -97,6 +97,7 @@
               lualine-nvim
               comment-nvim
               neocord
+              trouble-nvim
             ];
 
             cmp = with pkgs.vimPlugins; [
