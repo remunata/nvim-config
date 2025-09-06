@@ -97,6 +97,12 @@ require('lze').load {
     },
   },
   {
+    'jdtls',
+    lsp = {
+      filetypes = { 'java' },
+    },
+  },
+  {
     'gopls',
     lsp = {
       filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },

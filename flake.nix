@@ -45,6 +45,7 @@
               clang
               typescript-language-server
               gopls
+              jdt-language-server
             ];
 
             format = with pkgs; [
@@ -55,6 +56,7 @@
               clang-tools
               prettierd
               gofumpt
+              google-java-format
             ];
           };
 

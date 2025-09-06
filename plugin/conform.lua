@@ -14,6 +14,7 @@ require('lze').load {
         javascript = { 'prettierd' },
         typescript = { 'prettierd' },
         go = { 'gofumpt' },
+        java = { 'google-java-format' },
       },
       format_on_save = {
         lsp_format = 'fallback',
