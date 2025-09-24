@@ -91,6 +91,16 @@ require('lze').load {
       desc = '[S]earch [F]iles',
     },
     {
+      '<leader>sF',
+      function()
+        return require('telescope.builtin').find_files {
+          find_command = { 'rg', '--files', '--hidden', '-g', '!.git' },
+        }
+      end,
+      mode = { 'n' },
+      desc = '[S]earch hidden [F]iles',
+    },
+    {
       '<leader>sk',
       function()
         return require('telescope.builtin').keymaps()
