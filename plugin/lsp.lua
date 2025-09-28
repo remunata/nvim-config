@@ -117,4 +117,10 @@ require('lze').load {
       },
     },
   },
+  {
+    'qmlls',
+    lsp = {
+      filetypes = { 'qml', 'qmljs' },
+    },
+  },
 }

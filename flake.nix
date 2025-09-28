@@ -46,6 +46,7 @@
               typescript-language-server
               gopls
               jdt-language-server
+              kdePackages.qtdeclarative
             ];
 
             format = with pkgs; [
@@ -130,6 +131,9 @@
                   typescript
                   markdown
                   yaml
+                  go
+                  java
+                  qmljs
                 ]
               ))
             ];
