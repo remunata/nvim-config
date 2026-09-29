@@ -10,18 +10,14 @@ return {
 			vim.lsp.config("lua_ls", {
 				settings = {
 					Lua = {
-						diagnostics = { globals = { "vim" } },
+						diagnostics = { globals = { "vim", "Snacks" } },
 						workspace = { checkThirdParty = false },
 					},
 				},
 			})
 
 			-- Diagnostics appearance
-			vim.diagnostic.config({
-				virtual_text = true,
-				severity_sort = true,
-				float = { border = "rounded" },
-			})
+			vim.diagnostic.config({ virtual_text = true, severity_sort = true })
 
 			-- Keymaps, set only when an LSP attaches to a buffer.
 			vim.api.nvim_create_autocmd("LspAttach", {
@@ -39,7 +35,6 @@ return {
 					map("]d", function()
 						vim.diagnostic.jump({ count = 1 })
 					end, "Next diagnostic")
-					map("<leader>e", vim.diagnostic.open_float, "Show diagnostic")
 				end,
 			})
 		end,
