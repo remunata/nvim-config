@@ -3,7 +3,17 @@ return {
 
 	{ "nvim-tree/nvim-web-devicons", opts = {} },
 
-	{ "folke/which-key.nvim", opts = {} },
+	{
+		"folke/which-key.nvim",
+		opts = {
+			spec = {
+				{ "<leader>s", group = "Search" },
+				{ "<leader>F", group = "Format" },
+				{ "<leader>n", group = "Navigation" },
+				{ "<leader><leader>", group = "Buffer" },
+			},
+		},
+	},
 
 	{
 		"folke/noice.nvim",
