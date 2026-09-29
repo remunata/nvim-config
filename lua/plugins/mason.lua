@@ -8,8 +8,16 @@ return {
 		},
 		opts = {
 			ensure_installed = {
+				"bashls",
+				"fish_lsp",
 				"lua_ls",
-				"stylua",
+				"intelephense",
+				"html",
+				"cssls",
+				"jsonls",
+				"yamlls",
+				"sqlls",
+				"dockerls",
 			},
 		},
 	},

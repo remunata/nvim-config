@@ -65,7 +65,7 @@ return {
 			desc = "Open terminal",
 		},
 		{
-			"_",
+			"<leader>_",
 			function()
 				Snacks.lazygit()
 			end,

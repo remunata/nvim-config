@@ -17,6 +17,7 @@ return {
 				"lua",
 				"markdown",
 				"markdown_inline",
+				"php",
 				"regex",
 				"vim",
 				"vimdoc",

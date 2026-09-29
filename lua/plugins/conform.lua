@@ -16,6 +16,17 @@ return {
 		opts = {
 			formatters_by_ft = {
 				lua = { "stylua" },
+				html = { "prettierd", "prettier", stop_after_first = true },
+				css = { "prettierd", "prettier", stop_after_first = true },
+				javascript = { "prettierd", "prettier", stop_after_first = true },
+				json = { "prettierd", "prettier", stop_after_first = true },
+				php = function(bufnr)
+					local bufname = vim.api.nvim_buf_get_name(bufnr)
+					if bufname:match("/Views/") then
+						return {}
+					end
+					return { "php_cs_fixer" }
+				end,
 			},
 
 			default_format_opts = {

@@ -17,4 +17,19 @@ return {
 	},
 
 	{ "numToStr/Comment.nvim", opts = {} },
+
+	{
+		"danymat/neogen",
+		config = true,
+		version = "*",
+		keys = {
+			{
+				"<leader>ng",
+				function()
+					require("neogen").generate()
+				end,
+				desc = "Generate neogen",
+			},
+		},
+	},
 }
