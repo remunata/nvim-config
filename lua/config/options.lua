@@ -22,11 +22,6 @@ vim.o.tabstop = 4
 -- Don't show mode
 vim.o.showmode = false
 
--- Sync clipboard between OS and Neovim.
-vim.schedule(function()
-	vim.o.clipboard = "unnamedplus"
-end)
-
 -- Enable break indent
 vim.o.breakindent = true
 
@@ -66,3 +61,12 @@ vim.o.scrolloff = 10
 -- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 -- instead raise a dialog asking if you wish to save the current file(s)
 vim.o.confirm = true
+
+-- Highlight when yanking (copying) text
+vim.api.nvim_create_autocmd("TextYankPost", {
+	desc = "Highlight when yanking (copying) text",
+	group = vim.api.nvim_create_augroup("highlight-on-yank", { clear = true }),
+	callback = function()
+		vim.hl.on_yank()
+	end,
+})
