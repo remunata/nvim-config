@@ -5,13 +5,28 @@ return {
 	opts = {
 		bigfile = { enabled = true },
 		buffer = { enabled = true },
-		dashboard = { enabled = true },
 		explorer = { enabled = true },
 		picker = { enabled = true },
 		indent = { enabled = true },
 		notifier = { enabled = true },
 		terminal = { enabled = true },
 		lazygit = { enabled = true },
+		dashboard = {
+			enabled = true,
+			preset = {
+				header = [[
+⠄⢿⣇⠄⠄⠘⣆⢀⣼⣿⣿⣿⣿⢿⡿⣿⢻⣿⣿⣿⣿⣿⣿⣿⣟⢧⡲⣿⢷⢦                    
+⠄⠈⣿⠄⠄⠄⢙⢞⢿⣿⢹⢿⣦⢏⣱⢿⠘⣿⣝⠹⢿⣿⡽⣿⣿⣏⣆⢿⣿⡞                    
+⠄⠄⢻⡀⠄⠄⠈⣾⡸⡏⢸⡾⣴⣿⣿⣶⣼⣎⢵⢀⡛⣿⣷⡙⡻⢻⡴⠨⠨⠖                    
+⠄⠄⠈⣧⢀⡴⠊⢹⠁⡇⠈⢣⣿⣿⣿⣿⣦⣿⣷⣜⡳⣝⢧⢃⢣⣼⢁⠘⠆                     
+⠄⠄⠄⢹⡇⠄⣠⠔⠚⣅⠄⢰⣶⣦⣭⣿⣿⣿⡿⠟⠿⣷⡧⠄⣘⣟⣸                       
+⠄⠄⠄⠄⢷⠎⠄⠄⠄⣼⣦⠻⣿⣿⡟⠛⠻⢿⣿⣿⣿⡾⢱⣿⡏⠸⡏ ~ Have a wonderful day
+⠄⠄⠄⠄⠸⡄⠄⡄⠄⣿⢧⢗⠌⠻⣇⠿⠿⣸⣿⣿⡟⡐⣿⠟⢰⣇⠇                       
+⠄⠄⠄⠄⣠⡆⠄⠃⢠⠏⣤⢀⢢⡰⣭⣛⡉⠩⠭⡅⣾⢳⡴⡀⢸⣿⡆                       
+⠄⠄⢀⣶⡟⣽⠼⢀⡕⢀⠘⠸⢮⡳⡻⡍⡷⡆⠤⠤⠭⢸⢳⣷⢸⡟⣷                       
+⠄⣴⣿⢫⢞⣵⢏⡞⠄⢸⠄⣛⣗⠩⠄⣰⣚⠒⠂⣀⡀⢸⢸⣿⣧⠇⡼⣧                      ]],
+			},
+		},
 	},
 	keys = {
 		{
