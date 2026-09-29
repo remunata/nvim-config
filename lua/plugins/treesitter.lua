@@ -11,6 +11,9 @@ return {
 			ts.install({
 				"bash",
 				"css",
+				"dockerfile",
+				"dot",
+				"fish",
 				"html",
 				"javascript",
 				"json",
@@ -19,6 +22,7 @@ return {
 				"markdown_inline",
 				"php",
 				"regex",
+				"typescript",
 				"vim",
 				"vimdoc",
 				"yaml",
