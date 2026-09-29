@@ -30,6 +30,7 @@ return {
 				end
 				return { "php_cs_fixer" }
 			end,
+			rust = { "rustfmt" },
 			sh = { "shfmt" },
 			yaml = { "prettierd", "prettier", stop_after_first = true },
 		},
