@@ -22,9 +22,13 @@ return {
 				"markdown_inline",
 				"php",
 				"regex",
+				"scss",
+				"svelte",
+				"tsx",
 				"typescript",
 				"vim",
 				"vimdoc",
+				"vue",
 				"yaml",
 			})
 
