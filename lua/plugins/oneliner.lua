@@ -10,7 +10,7 @@ return {
 		opts = {
 			spec = {
 				{ "<leader>s", group = "Search" },
-				{ "<leader>F", group = "Format" },
+				{ "<leader>f", group = "Format" },
 				{ "<leader>n", group = "Navigation" },
 				{ "<leader>l", group = "Diagnostics" },
 				{ "<leader><leader>", group = "Buffer" },
