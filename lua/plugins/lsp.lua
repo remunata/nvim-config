@@ -16,6 +16,10 @@ return {
 				},
 			})
 
+			vim.lsp.config("bashls", {
+				root_markers = {},
+			})
+
 			-- Diagnostics appearance
 			vim.diagnostic.config({ virtual_text = true, severity_sort = true })
 

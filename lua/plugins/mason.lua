@@ -1,14 +1,5 @@
 return {
-	{
-		"mason-org/mason.nvim",
-		opts = {
-			ensure_installed = {
-				"dockerfmt",
-				"prettierd",
-				"stylua",
-			},
-		},
-	},
+	{ "mason-org/mason.nvim", opts = {} },
 	{
 		"mason-org/mason-lspconfig.nvim",
 		dependencies = {
@@ -18,15 +9,29 @@ return {
 		opts = {
 			ensure_installed = {
 				"bashls",
-				"fish_lsp",
-				"lua_ls",
-				"intelephense",
-				"html",
 				"cssls",
-				"jsonls",
-				"yamlls",
-				"sqlls",
 				"dockerls",
+				"fish_lsp",
+				"html",
+				"intelephense",
+				"jsonls",
+				"lua_ls",
+				"nil_ls",
+				"sqlls",
+				"yamlls",
+			},
+		},
+	},
+	{
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		dependencies = { "mason-org/mason.nvim" },
+		opts = {
+			ensure_installed = {
+				"dockerfmt",
+				"nixfmt",
+				"prettierd",
+				"shfmt",
+				"stylua",
 			},
 		},
 	},
