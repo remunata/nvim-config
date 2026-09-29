@@ -30,6 +30,7 @@ return {
 				"dockerfmt",
 				"nixfmt",
 				"prettierd",
+				"prettier",
 				"shfmt",
 				"stylua",
 			},
