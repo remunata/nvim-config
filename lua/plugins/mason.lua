@@ -1,5 +1,14 @@
 return {
-	{ "mason-org/mason.nvim", opts = {} },
+	{
+		"mason-org/mason.nvim",
+		opts = {
+			ensure_installed = {
+				"dockerfmt",
+				"prettierd",
+				"stylua",
+			},
+		},
+	},
 	{
 		"mason-org/mason-lspconfig.nvim",
 		dependencies = {
