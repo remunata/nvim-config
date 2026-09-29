@@ -20,6 +20,7 @@ return {
 				css = { "prettierd", "prettier", stop_after_first = true },
 				javascript = { "prettierd", "prettier", stop_after_first = true },
 				json = { "prettierd", "prettier", stop_after_first = true },
+				yaml = { "prettierd", "prettier", stop_after_first = true },
 				dockerfile = { "dockerfmt" },
 				php = function(bufnr)
 					local bufname = vim.api.nvim_buf_get_name(bufnr)
