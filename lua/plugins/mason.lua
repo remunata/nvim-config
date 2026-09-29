@@ -8,6 +8,7 @@ return {
 		},
 		opts = {
 			ensure_installed = {
+				"astro",
 				"bashls",
 				"cssls",
 				"dockerls",
@@ -31,7 +32,6 @@ return {
 				"dockerfmt",
 				"nixfmt",
 				"prettierd",
-				"prettier",
 				"shfmt",
 				"stylua",
 			},

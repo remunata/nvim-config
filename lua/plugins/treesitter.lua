@@ -8,6 +8,7 @@ return {
 		ts.setup({})
 
 		ts.install({
+			"astro",
 			"bash",
 			"css",
 			"dockerfile",

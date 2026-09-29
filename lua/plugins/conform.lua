@@ -15,14 +15,21 @@ return {
 	opts = {
 		formatters_by_ft = {
 			bash = { "shfmt" },
-			css = { "prettierd", "prettier", stop_after_first = true },
 			dockerfile = { "dockerfmt" },
 			dotenv = { "shfmt" },
-			html = { "prettierd", "prettier", stop_after_first = true },
-			javascript = { "prettierd", "prettier", stop_after_first = true },
-			json = { "prettierd", "prettier", stop_after_first = true },
 			lua = { "stylua" },
 			nix = { "nixfmt" },
+			rust = { "rustfmt" },
+			sh = { "shfmt" },
+			html = { "prettierd", "prettier", stop_after_first = true },
+			css = { "prettierd", "prettier", stop_after_first = true },
+			json = { "prettierd", "prettier", stop_after_first = true },
+			yaml = { "prettierd", "prettier", stop_after_first = true },
+			astro = { "prettier" },
+			javascript = { "prettier" },
+			typescript = { "prettier" },
+			javascriptreact = { "prettier" },
+			typescriptreact = { "prettier" },
 			php = function(bufnr)
 				local bufname = vim.api.nvim_buf_get_name(bufnr)
 				if bufname:match("/Views/") then
@@ -30,9 +37,6 @@ return {
 				end
 				return { "php_cs_fixer" }
 			end,
-			rust = { "rustfmt" },
-			sh = { "shfmt" },
-			yaml = { "prettierd", "prettier", stop_after_first = true },
 		},
 
 		default_format_opts = {
