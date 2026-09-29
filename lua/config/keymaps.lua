@@ -21,6 +21,22 @@ vim.keymap.set({ "n", "t" }, "<C-Right>", "<cmd>vertical resize +2<CR>", { silen
 vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { silent = true, expr = true })
 vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { silent = true, expr = true })
 
+-- Copy / paste with system clipboard
+vim.keymap.set({ "n", "v", "x" }, "<leader>y", '"+y', { desc = "Yank to clipboard", noremap = true, silent = true })
+vim.keymap.set(
+	{ "n", "v", "x" },
+	"<leader>Y",
+	'"+yy',
+	{ desc = "Yank line to clipboard", noremap = true, silent = true }
+)
+vim.keymap.set({ "n", "v", "x" }, "<leader>p", '"+p', { desc = "Paste from clipboard", noremap = true, silent = true })
+vim.keymap.set(
+	{ "x" },
+	"<leader>P",
+	'"-dP',
+	{ desc = "Paste over selection without erasing unnamed register", noremap = true, silent = true }
+)
+
 -- Toggle autoformat status
 vim.keymap.set("n", "<leader>FT", function()
 	vim.g.disable_autoformat = not vim.g.disable_autoformat
