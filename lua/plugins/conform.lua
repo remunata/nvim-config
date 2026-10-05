@@ -26,8 +26,8 @@ return {
 			json = { "prettierd", "prettier", stop_after_first = true },
 			yaml = { "prettierd", "prettier", stop_after_first = true },
 			astro = { "prettier" },
-			javascript = { "prettier" },
-			typescript = { "prettier" },
+			javascript = { "prettierd", "prettier", stop_after_first = true },
+			typescript = { "prettierd", "prettier", stop_after_first = true },
 			javascriptreact = { "prettier" },
 			typescriptreact = { "prettier" },
 			php = function(bufnr)
