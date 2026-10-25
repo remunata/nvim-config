@@ -14,6 +14,7 @@ return {
 			"dockerfile",
 			"dot",
 			"fish",
+			"go",
 			"html",
 			"javascript",
 			"json",

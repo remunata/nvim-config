@@ -13,6 +13,7 @@ return {
 				"cssls",
 				"dockerls",
 				"fish_lsp",
+				"gopls",
 				"html",
 				"intelephense",
 				"jsonls",
